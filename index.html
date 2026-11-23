@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footballer Ranker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <button id="new-round-btn" class="new-round-btn" type="button">
+    New Round
+  </button>
+
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>Footballer Ranker</h1>
+        <p class="subtitle">Rank 5 random players from 1 (Best) to 5 (Worst)</p>
+      </div>
+
+      <div class="pool-switch" role="group" aria-label="Player pool">
+        <button class="pool-btn active" data-pool="all" type="button">All Players</button>
+        <button class="pool-btn" data-pool="legends" type="button">Legends</button>
+        <button class="pool-btn" data-pool="modern" type="button">Modern</button>
+      </div>
+    </header>
+
+    <section class="board">
+      <div class="card-panel">
+        <div class="round-meta">
+          <span id="round-counter">Player 1 of 5</span>
+          <span id="pool-label" class="pill">All Players</span>
+        </div>
+
+        <article id="player-card" class="player-card" aria-live="polite">
+          <div class="player-top">
+            <span id="player-number" class="jersey">#10</span>
+            <span id="player-pos" class="pos">FW</span>
+          </div>
+          <h2 id="player-name" class="player-name">Loading...</h2>
+          <p id="player-meta" class="player-meta"></p>
+          <p id="player-era" class="player-era"></p>
+          <p id="player-stat" class="player-stat"></p>
+        </article>
+      </div>
+
+      <div class="slots-panel">
+        <div class="slots-header">
+          <span>Your Ranking</span>
+          <span class="hint">Click a spot to place</span>
+        </div>
+        <div id="slots-list" class="slots-list"></div>
+      </div>
+    </section>
+
+    <section id="summary-box" class="summary-box hidden">
+      <div class="summary-top">
+        <div>
+          <h2>Final Ranking</h2>
+          <p id="summary-note" class="summary-note"></p>
+        </div>
+        <button id="copy-btn" class="secondary-btn" type="button">Copy Ranking</button>
+      </div>
+      <ol id="summary-list" class="summary-list"></ol>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
