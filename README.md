@@ -15,3 +15,9 @@ This project is split into three main files inside the project folder so that ea
 
 **`script.js`** is the brain of the game and handles all the interactive actions behind the scenes. First, it stores a list of twenty well-known footballers with ten from the modern era and ten legends, along with details like their jersey number, position, nationality, clubs, era tag, and a short career highlight or stat. When a round starts, `script.js` filters the player list based on which pool button is active, shuffles the players randomly so the order is unpredictable each time, and picks five players for the round. It keeps track of which player you are currently viewing and which of the five ranking slots are still empty. When you click a ranking slot, `script.js` puts the current player into that slot, locks that slot so it cannot be overwritten during the same round, and moves to the next player. Once all five slots are filled, `script.js` reveals the final ranking summary, highlights your `#1` and `#5` choices, and enables the **Copy Ranking** button so you can copy your list to your clipboard. Clicking **New Round** or switching pools resets the round cleanly with a new set of five players.
 
+### How to launch the program
+
+1. Make sure the disk space has more than 1% for program to run
+2. Clone the code : https://github.com/suphakritkan-dotcom/project
+3. Run cd project then python3 -m http.server 8080 to start local server.
+4. CTRL + Click on the http to visit the website.
