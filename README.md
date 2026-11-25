@@ -1,5 +1,5 @@
 # Footballer Ranker
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://youtu.be/iRujFTvF_XI>
 #### Description:
 Footballer Ranker is a simple, interactive web game that lets you rank five randomly picked football players from 1 (best) to 5 (worst). Instead of seeing all five players at once and easily putting them in order, the game shows you one player at a time. You look at the player on the screen including their jersey number, position, country, clubs, era, and a short highlight or stat, and then you choose which open spot from #1 to #5 you want to put them in. Because you do not know who will show up next, you have to think carefully. If you put an okay player in #1 early on, a superstar might appear later and you will have nowhere to put them at the top. Once you place all five players into spots #1 through #5, the round ends and shows a final summary of your picks, lets you copy your ranking to paste somewhere else, and lets you start a brand-new round with fresh players by clicking the green **New Round** button in the top-right corner of the screen.
 
